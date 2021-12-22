@@ -14,6 +14,10 @@ public class Main {
         System.out.println(convert(6));
 
         System.out.println(giveMeSomething("a"));
+
+        System.out.println(reverse(false));
+
+        System.out.println(countWords("It's high noon"));
     }
 
     public static int getFirstValue(int[] arr) {
@@ -39,5 +43,13 @@ public class Main {
 
     public static String giveMeSomething(String a) {
         return "something " + a;
+    }
+
+    public static boolean reverse(boolean b) {
+        return !b;
+    }
+
+    public static int countWords(String s) {
+        return s.split(" ").length;
     }
 }
