@@ -38,14 +38,17 @@ public class Main {
     }
 
     public static int convert(int minutes) {
+
         return minutes * 60;
     }
 
     public static String giveMeSomething(String a) {
+
         return "something " + a;
     }
 
     public static boolean reverse(boolean b) {
+
         return !b;
     }
 
