@@ -32,6 +32,14 @@ public class Main {
         System.out.println(helloName("Gerald"));
         // 14
         System.out.println(reverse(".tnereffid knihT"));
+        // 15
+        System.out.println(makesTen(9, 10));
+        // 16
+        System.out.println(numberSyllables("pas-try"));
+        // 17
+        System.out.println(match("hello", "hELLo"));
+        // 18
+        System.out.println();
     }
     // 1st question
     public static int getFirstValue(int[] arr) {
@@ -125,5 +133,23 @@ public class Main {
      public static String reverse(final String str) {
          return new StringBuilder(str).reverse().toString();
      }
+
+     //15th question
+     public static boolean makesTen(int a, int b) {
+         return (a == 10 || b == 10 || (a + b) == 10);
+     }
+
+     // 16th question
+     public static int numberSyllables(String word) {
+         return word.split("-").length;
+     }
+
+     // 17th question
+     public static boolean match(String str1, String str2) {
+         return str1.equalsIgnoreCase(str2);
+     }
+
+     // 18th question
+
 
 }
