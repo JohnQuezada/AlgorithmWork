@@ -2,7 +2,7 @@ package com.careerdevs.HackerRank;
 
 import java.util.Scanner;
 
-public class Day01HelloWorld {
+public class Day00HelloWorld {
     public static void main(String[] args) {
         // Create a Scanner object to read input from stdin.
         Scanner scan = new Scanner(System.in);
