@@ -1,5 +1,7 @@
 package com.careerdevs;
 
+import java.util.Arrays;
+
 public class Main {
 
 
@@ -9,7 +11,7 @@ public class Main {
         // 2
         System.out.println(addition(2));
         // 3
-        System.out.println(search(new int[]{1, 2, 3, 4},3));
+        System.out.println(search(new int[]{1, 2, 3, 4}, 3));
         // 4
         System.out.println(convert(6));
         // 5
@@ -19,13 +21,13 @@ public class Main {
         // 7
         System.out.println(countWords("It's high noon"));
         // 8
-        System.out.println(existsHigher(new int[] {5, 3, 15, 22, 4}, 10));
+        System.out.println(existsHigher(new int[]{5, 3, 15, 22, 4}, 10));
         // 9
         System.out.println(getCount("Celebration"));
         // 10
         System.out.println(sum(3, 2));
         // 11
-        System.out.println(isSameNum(2,2));
+        System.out.println(isSameNum(2, 2));
         // 12
         System.out.println(calcAge(10));
         // 13
@@ -41,6 +43,7 @@ public class Main {
         // 18
         System.out.println();
     }
+
     // 1st question
     public static int getFirstValue(int[] arr) {
         return arr[0];
@@ -53,9 +56,8 @@ public class Main {
 
     // 3rd question
     public static int search(int[] arr, int item) {
-        for(int i = 0; i < arr.length; i++)
-        {
-            if(arr[i]==item)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == item)
                 return i;
         }
         return -1;
@@ -87,11 +89,11 @@ public class Main {
 
     // 8th question
     public static boolean existsHigher(int[] arr, int n) {
-            for (int i : arr) {
-                if (i >= n) return true;
-            }
-            return false;
+        for (int i : arr) {
+            if (i >= n) return true;
         }
+        return false;
+    }
 
     // 9th question
     public static int getCount(String str) {
@@ -124,32 +126,44 @@ public class Main {
         return age * 365;
     }
 
-     // 13th question
-     public static String helloName(String name) {
-         return "Hello " + name + "!";
-     }
+    // 13th question
+    public static String helloName(String name) {
+        return "Hello " + name + "!";
+    }
 
-     // 14th question
-     public static String reverse(final String str) {
-         return new StringBuilder(str).reverse().toString();
-     }
+    // 14th question
+    public static String reverse(final String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
 
-     //15th question
-     public static boolean makesTen(int a, int b) {
-         return (a == 10 || b == 10 || (a + b) == 10);
-     }
+    //15th question
+    public static boolean makesTen(int a, int b) {
+        return (a == 10 || b == 10 || (a + b) == 10);
+    }
 
-     // 16th question
-     public static int numberSyllables(String word) {
-         return word.split("-").length;
-     }
+    // 16th question
+    public static int numberSyllables(String word) {
+        return word.split("-").length;
+    }
 
-     // 17th question
-     public static boolean match(String str1, String str2) {
-         return str1.equalsIgnoreCase(str2);
-     }
+    // 17th question
+    public static boolean match(String str1, String str2) {
+        return str1.equalsIgnoreCase(str2);
+    }
 
-     // 18th question
-
-
+    public static int[] arrayOfMultiples(int num, int length) {
+        int arr[] = new int[length];
+        for (int i = 0; i < length; i++) {
+            arr[i] = num * (i + 1);
+        }
+        return arr;
+    }
 }
+
+//    public static int[] arrayOfMultiples(int num, int length) {
+//        int arr[] = new int[length];
+//        Arrays.setAll(arr, (index)-> num * (index + 1));
+//        return arr;
+//
+//
+//}
