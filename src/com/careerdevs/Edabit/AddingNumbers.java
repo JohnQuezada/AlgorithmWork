@@ -13,3 +13,11 @@ public class AddingNumbers {
         }
     }
 }
+
+// Additional Solution that is MUCH cleaner
+    //    public static String add(String a, String b) {
+//        try {
+//            return (Integer.parseInt(a)+Integer.parseInt(b))+"";
+//        } catch (Exception e) {
+//            return "Invalid Operation";
+//}
