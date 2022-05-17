@@ -12,3 +12,7 @@ public class ReverseAnArray {
         return reverse;
     }
 }
+//Python Solution
+//def reverse(lst):
+//        lst.reverse()
+//        return(lst)
